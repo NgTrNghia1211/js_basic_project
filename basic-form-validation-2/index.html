@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <form action="" method="POST" class="form" id="register-form">
+            <h3 class="heading">Member Register</h3>
+            <p class="desc"> The life is perfect when we are all wibu ❤️</p>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="fullname" class="form-label">Full name</label>
+                <input id="fullname" name="fullname" rules="required" type="text" placeholder="VD: Sơn Đặng"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" rules="required|email" type="text" placeholder="VD: email@domain.com"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" name="password" rules="required|min:6" type="password" placeholder="Nhập mật khẩu"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label">Confirm Password</label>
+                <input id="password_confirmation" rules="required" name="password_confirmation"
+                    placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <!-- <div class="form-group horizontal">
+                <label for="gender" class="form-label">Gender</label>
+                <div class="male">
+                    <input name="gender" value="Male" type="checkbox" class="form-control">
+                    Male
+                </div>
+                <div class="female">
+                    <input name="gender" value="Female" type="checkbox" class="form-control">
+                    Female
+                </div>
+                <div class="other">
+                    <input name="gender" value="other" type="checkbox" class="form-control">
+                    Other
+                </div>
+                <span class="form-message"></span>
+            </div> -->
+
+            <button class="form-submit">Register</button>
+        </form>
+    </div>
+
+    <script src="validation.js"></script>
+</body>
+
+</html>
